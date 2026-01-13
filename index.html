@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Coffee & Bakery</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 serif-font" href="#">Classic Coffee & Bakery</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center text-lg-start" id="navbarNav">
+                <ul class="navbar-nav ms-lg-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link px-3" href="#">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" data-bs-toggle="dropdown">Menú</a>
+                        <ul class="dropdown-menu shadow border-0 p-2">
+                            <li><a class="dropdown-item py-2 rounded" href="menu.html#cafes">Cafés</a></li>
+                            <li><a class="dropdown-item py-2 rounded" href="menu.html#pasteles">Pasteles</a></li>
+                            <li><a class="dropdown-item py-2 rounded" href="menu.html#panaderia">Panadería</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item py-2 fw-bold text-caramelo" href="menu.html#combos">Combos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item my-2 my-lg-0 mx-lg-2">
+                        <a class="btn btn-caramelo px-4 shadow-sm" href="ordenar.html">Ordenar en línea</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 d-none d-lg-block">
+                        <div class="cart-icon-nav" data-bs-toggle="offcanvas" data-bs-target="#carritoPanel" style="cursor:pointer">
+                            <i class="fas fa-shopping-bag text-white"></i>
+                            <span class="badge rounded-pill bg-danger badge-cart cart-count-global">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section d-flex align-items-center text-center text-white overflow-hidden">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h1 class="display-1 fw-bold serif-font mb-3">Classic Coffee & Bakery</h1>
+                    <p class="h3 fst-italic mb-4 text-rosa">“El equilibrio perfecto entre café y repostería”</p>
+                    <p class="lead mb-5 px-md-5">Un espacio cálido donde el café y la pastelería conviven de forma natural.</p>
+                    <a href="menu.html" class="btn btn-caramelo btn-lg px-5 py-3 shadow">VER MENÚ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="productos" class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <h2 class="text-center mb-5 serif-font display-5">Productos destacados</h2>
+            <div class="row g-4">
+                <div id="cafes" class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="img/cafe.png" class="card-img-top object-fit-cover" height="300" alt="Café">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold serif-font">Café artesanal</h4>
+                            <p class="text-muted mb-0">Granos seleccionados y preparados al momento para un sabor auténtico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="pasteles" class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="img/pastel.png" class="card-img-top object-fit-cover" height="300" alt="Pastelería">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold serif-font">Pasteles clásicos</h4>
+                            <p class="text-muted mb-0">Recetas tradicionales elaboradas con ingredientes frescos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="panaderia" class="col-12 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                        <img src="img/pan.png" class="card-img-top object-fit-cover" height="300" alt="Panadería">
+                        <div class="card-body p-4 text-center">
+                            <h4 class="fw-bold serif-font">Panadería fresca</h4>
+                            <p class="text-muted mb-0">Horneado diario para acompañar cada taza de café.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-crema">
+        <div class="container py-lg-5">
+            <div class="row g-5 text-center align-items-stretch">
+                <div class="col-12 col-md-4 px-4">
+                    <i class="fa-solid fa-mug-hot display-4 icon-accent mb-3"></i>
+                    <h3 class="fw-bold serif-font h4">Calidad</h3>
+                    <p class="text-secondary mb-0">Seleccionamos cuidadosamente cada ingrediente para ofrecer productos de alto nivel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, veritatis.</p>
+                </div>
+                <div class="col-12 col-md-4 px-4 border-md-custom">
+                    <i class="fa-solid fa-bread-slice display-4 icon-accent mb-3"></i>
+                    <h3 class="fw-bold serif-font h4">Frescura</h3>
+                    <p class="text-secondary mb-0">Elaboramos café y pastelería todos los días para garantizar el mejor sabor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, totam.</p>
+                </div>
+                <div class="col-12 col-md-4 px-4">
+                    <i class="fa-solid fa-couch display-4 icon-accent mb-3"></i>
+                    <h3 class="fw-bold serif-font h4">Experiencia</h3>
+                    <p class="text-secondary mb-0">Un ambiente pensado para disfrutar, compartir y relajarse. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, debitis!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="combos" class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <h2 class="text-center mb-5 serif-font display-5">Combos recomendados</h2>
+            <div class="row g-4">
+                <div class="col-12 col-xl-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-5">
+                                <img src="img/combo1.png" class="img-fluid h-100 object-fit-cover" style="min-height: 150px;" alt="Combo 1">
+                            </div>
+                            <div class="col-7">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold serif-font mb-2">Café + Pastel del día</h5>
+                                    <p class="small text-muted mb-0">La combinación perfecta para cualquier momento.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
+                        <div class="row g-0 h-100 align-items-center">
+                            <div class="col-5">
+                                <img src="img/combo2.png" class="img-fluid h-100 object-fit-cover" style="min-height: 150px;" alt="Combo 2">
+                            </div>
+                            <div class="col-7">
+                                <div class="card-body p-4">
+                                    <h5 class="fw-bold serif-font mb-2">Cappuccino + Croissant</h5>
+                                    <p class="small text-muted mb-0">Un clásico que nunca falla.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-crema-cta text-center">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-11 col-md-8">
+                    <h2 class="display-5 fw-bold serif-font mb-3">¿Antojo de algo especial?</h2>
+                    <p class="lead mb-4 text-gris-oscuro">Ordena en línea y disfruta del mejor café y pastelería sin esperar.</p>
+                    <a href="menu.html#cafes" class="btn btn-caramelo btn-lg px-5 py-3 fw-bold shadow">ORDENA EN LÍNEA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoPanel">
+        <div class="offcanvas-header bg-dark text-white">
+            <h5 class="offcanvas-title serif-font">Tu Pedido</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <div id="cart-items" class="flex-grow-1 overflow-auto">
+                <p class="text-center text-muted mt-5">No hay productos en el carrito</p>
+            </div>
+            <div class="border-top pt-3">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5 class="fw-bold">Total:</h5>
+                    <h5 class="fw-bold text-caramelo" id="cart-total">$0.00</h5>
+                </div>
+                <button class="btn btn-caramelo w-100 py-3 fw-bold" onclick="redirigirAOrden()">FINALIZAR COMPRA</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-dark text-white">
+        <hr class="m-0 border-white opacity-25">
+        <div class="container py-4 text-center">
+            <p class="h5 fw-bold serif-font mb-1">Classic Coffee & Bakery</p>
+            <p class="small text-rosa mb-3">El equilibrio perfecto entre café y repostería</p>
+            <p class="opacity-50 m-0" style="font-size: 0.75rem;">&copy; 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

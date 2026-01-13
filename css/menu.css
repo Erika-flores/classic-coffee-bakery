@@ -1,0 +1,57 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(78, 52, 46, 0.2), rgba(78, 52, 46, 0.6)), 
+                url('../img/heromenu2.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 65vh;
+}
+.hero-section h1, .hero-section p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Estilo de los controles del carrusel */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    background: none;
+    border: none;
+    opacity: 1;
+}
+
+/* Asegurar que las tarjetas tengan un padding para el efecto de movimiento */
+.carousel-inner {
+    padding: 15px 0;
+}
+
+/* Flechas fuera del área de las tarjetas para no tapar contenido */
+.carousel-control-prev { left: -50px; }
+.carousel-control-next { right: -50px; }
+
+/* Si el contenedor corta las flechas en móvil, las ocultamos o las movemos */
+@media (max-width: 1200px) {
+    .carousel-control-prev, .carousel-control-next {
+        display: none; /* Ocultar flechas en móvil para usar el dedo (touch) */
+    }
+}
+
+/* --- ESTILO DE TARJETAS Y ANIMACIÓN --- */
+.item-menu {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item-menu:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+
+#modalDetalles .modal-content {
+    overflow: hidden; /* Para que la imagen respete los bordes redondeados del modal */
+}
+
+@media (max-width: 768px) {
+    #modalDetalles .modal-dialog {
+        max-width: 95vw; /* En móviles es mejor que ocupe casi todo el ancho */
+    }
+}

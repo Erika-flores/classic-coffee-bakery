@@ -1,0 +1,28 @@
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(78, 52, 46, 0.2), rgba(78, 52, 46, 0.6)), 
+                url('../img/hero.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 88vh;
+}
+.hero-section h1, .hero-section p {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* --- ANIMACIÓN DE TARJETAS (HOVER) --- */
+/* 1. Configuración base de las tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* 2. Efecto al pasar el mouse */
+.card:hover {
+    /* Mueve la tarjeta 10 píxeles hacia arriba */
+    transform: translateY(-10px);
+    
+    /* Aumenta la sombra para dar sensación de profundidad */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
