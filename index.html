@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
+    <!-- SECCION NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm py-3">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3 serif-font" href="#">Classic Coffee & Bakery</a>
@@ -53,6 +55,7 @@
         </div>
     </nav>
 
+    <!-- SECCION HERO -->
     <header id="inicio" class="hero-section d-flex align-items-center text-center text-white overflow-hidden">
         <div class="container py-5">
             <div class="row justify-content-center">
@@ -66,6 +69,7 @@
         </div>
     </header>
 
+    <!-- SECCION PRODUCTOS DESTACADOS -->
     <section id="productos" class="py-5 bg-white">
         <div class="container py-lg-4">
             <h2 class="text-center mb-5 serif-font display-5">Productos destacados</h2>
@@ -101,6 +105,7 @@
         </div>
     </section>
 
+    <!-- SECCION EXPERIENCIA -->
     <section class="py-5 bg-crema">
         <div class="container py-lg-5">
             <div class="row g-5 text-center align-items-stretch">
@@ -123,6 +128,7 @@
         </div>
     </section>
 
+    <!-- SECCION RECOMENDADOS -->
     <section id="combos" class="py-5 bg-white">
         <div class="container py-lg-4">
             <h2 class="text-center mb-5 serif-font display-5">Combos recomendados</h2>
@@ -161,6 +167,7 @@
         </div>
     </section>
 
+    <!-- SECCION BOTÓN CTA -->
     <section class="py-5 bg-crema-cta text-center">
         <div class="container py-4">
             <div class="row justify-content-center">
@@ -173,6 +180,7 @@
         </div>
     </section>
 
+    <!-- SECCION OFFCANVAS CARRITO -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoPanel">
         <div class="offcanvas-header bg-dark text-white">
             <h5 class="offcanvas-title serif-font">Tu Pedido</h5>
@@ -192,15 +200,37 @@
         </div>
     </div>
 
+    <!-- SECCION FOOTER -->
     <footer class="footer-dark text-white">
-        <hr class="m-0 border-white opacity-25">
-        <div class="container py-4 text-center">
-            <p class="h5 fw-bold serif-font mb-1">Classic Coffee & Bakery</p>
-            <p class="small text-rosa mb-3">El equilibrio perfecto entre café y repostería</p>
-            <p class="opacity-50 m-0" style="font-size: 0.75rem;">&copy; 2026 Todos los derechos reservados.</p>
+        <div class="container py-4">
+                    
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="text-center text-md-start mb-3 mb-md-0">
+                    <p class="h5 fw-bold serif-font mb-1">Classic Coffee & Bakery</p>
+                    <p class="small text-rosa m-0">El equilibrio perfecto entre café y repostería</p>
+                </div>
+
+                <div class="d-flex gap-4">
+                    <a href="https://www.facebook.com/login/" target="_blank" class="text-white opacity-75" style="text-decoration: none;">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank" class="text-white opacity-75" style="text-decoration: none;">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/login" target="_blank" class="text-white opacity-75" style="text-decoration: none;">
+                        <i class="fa-brands fa-tiktok fa-xl"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mt-4 text-center border-top border-white border-opacity-10 pt-3">
+                <p class="opacity-50 m-0" style="font-size: 0.75rem;">&copy; 2026 Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- SECCION ENLACE A JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/carrito.js"></script>
 </body>

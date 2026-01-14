@@ -47,7 +47,7 @@ body {
 /* Footer Especial */
 .footer-dark { background-color: #382521; }
 
-/* Bordes Responsivos para Beneficios */
+/* Bordes Responsivos */
 @media (min-width: 768px) {
     .border-md-custom {
         border-left: 1px solid rgba(78, 52, 46, 0.1) !important;
