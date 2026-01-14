@@ -15,11 +15,16 @@
         <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm py-3">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3 serif-font" href="index.html">Classic Coffee & Bakery</a>
-            <div class="cart-icon-nav" data-bs-toggle="offcanvas" data-bs-target="#carritoPanel" style="cursor:pointer">
-                <a href="ordenar.html" class="cart-icon-nav text-decoration-none">
+            <div class="d-flex align-items-center gap-3 d-lg-none">
+            
+                <div class="cart-icon-nav" data-bs-toggle="offcanvas" data-bs-target="#carritoPanel" style="cursor:pointer">
                     <i class="fas fa-shopping-bag text-white"></i>
                     <span class="badge rounded-pill bg-danger badge-cart cart-count-global">0</span>
-                </a>                
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
