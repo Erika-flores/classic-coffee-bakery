@@ -20,9 +20,6 @@
 
 /* 2. Efecto al pasar el mouse */
 .card:hover {
-    /* Mueve la tarjeta 10 píxeles hacia arriba */
     transform: translateY(-10px);
-    
-    /* Aumenta la sombra para dar sensación de profundidad */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
 }

@@ -28,10 +28,10 @@
 .carousel-control-prev { left: -50px; }
 .carousel-control-next { right: -50px; }
 
-/* Si el contenedor corta las flechas en móvil, las ocultamos o las movemos */
+/* Si el contenedor corta las flechas en móvil, se ocultan*/
 @media (max-width: 1200px) {
     .carousel-control-prev, .carousel-control-next {
-        display: none; /* Ocultar flechas en móvil para usar el dedo (touch) */
+        display: none; 
     }
 }
 

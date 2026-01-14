@@ -12,7 +12,7 @@ function actualizarUI() {
     // Guardar el estado actual en el almacenamiento local
     localStorage.setItem('carrito', JSON.stringify(carrito));
     
-    // 1. Actualizar contadores globales (el numerito sobre el icono del bolso)
+    // 1. Actualizar el numero del icono 
     document.querySelectorAll('.cart-count-global').forEach(el => el.innerText = carrito.length);
 
     // 2. Elementos de la interfaz
@@ -49,7 +49,7 @@ function actualizarUI() {
             </div>`;
     });
 
-    // Inyectar el HTML donde corresponda (según la página donde estemos)
+    //Poner el HTML segun la pagina
     if (contenedorCarrito) {
         contenedorCarrito.innerHTML = html;
         totalCarrito.innerText = `$${total.toFixed(2)}`;
@@ -87,14 +87,15 @@ function toggleDireccion(show) {
     }
 }
 
-// Para manejar el envío del formulario (evitar que la página solo se recargue)
+// Para manejar el envío del formulario 
 document.getElementById('form-pedido')?.addEventListener('submit', function(e) {
     e.preventDefault();
     alert("¡Pedido recibido con éxito! Nos contactaremos pronto.");
-    localStorage.removeItem('carrito'); // Limpiamos el carrito tras la compra
+    localStorage.removeItem('carrito'); // Limpia el carrito tras la compra
     window.location.href = 'ordenar.html';
 });
 
+//Tarjetas modal
 function mostrarDetalles(nombre, imagen, descripcion, precio) {
     document.getElementById('modalTitulo').innerText = nombre;
     document.getElementById('modalImg').src = imagen;
