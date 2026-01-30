@@ -102,3 +102,14 @@ function mostrarDetalles(nombre, imagen, descripcion, precio) {
     document.getElementById('modalDescripcion').innerText = descripcion;
     document.getElementById('modalPrecio').innerText = precio;
 }
+
+// --- FUNCION PARA MOVER EL SLIDER DE PRODUCTOS ---
+function moverScroll(idContenedor, distancia) {
+    const contenedor = document.getElementById(idContenedor);
+    if (contenedor) {
+        contenedor.scrollBy({
+            left: distancia,
+            behavior: 'smooth'
+        });
+    }
+}

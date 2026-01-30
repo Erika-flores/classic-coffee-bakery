@@ -69,673 +69,711 @@
     </header>
 
     <!-- SECCION PRINCIPAL- MENÚ -->
-    <main class="container py-5">
+    <main class="py-5">
 
         <!-- SECCION CAFÉ -->
-        <section id="cafes" class="mb-5 pt-4">
-            <h2 class="text-center serif-font display-5 mb-3 border-bottom pb-3">CAFÉS</h2>
-            <h4 class="text-caramelo mb-2 fw-bold"><i class="fas fa-mug-hot me-2"></i>Café Caliente</h4>   
-            <div id="carouselCafes" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-3 justify-content-center">
-                            <div class=" col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/capuccino.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Cappuccino</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Cappuccino', 3.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Cappuccino', 'img/capuccino.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/kitkat.png" class="card-img-top rounded-4 mb-2" alt="KitKat Latte">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">KitKat Latte</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.75</p>                                   
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('KitKat Latte', 3.75)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('KitKat Latte', 'img/kitkat.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-6 col-md-4 d-none d-sm-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/mocha-blanco.png" class="card-img-top rounded-4 mb-2" alt="Mocha Blanco">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Mocha Blanco</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Mocha Blanco', 4.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Mocha Blanco', 'img/mocha-blanco.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="cafes" class="mb-5 pt-4">
+    <div class="container"> 
+        <h2 class="text-center serif-font display-5 mb-3 border-bottom pb-3">CAFÉS</h2>
+        <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-mug-hot me-2"></i>Café Caliente</h4>   
+    </div>
+    
+    <div class="container-fluid slider-wrapper">
+        <button class="btn-slider btn-prev" onclick="moverScroll('slider-cafes', -350)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
 
-                    <div class="carousel-item">
-                        <div class="row g-3 justify-content-center">
-                            <div class=" col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/bombon.png" class="card-img-top rounded-4 mb-2" alt="Café Bombón">
-                                    <div class="card-body p-1 text-center">
-                                    <h6 class="fw-bold mb-1">Café Bombón</h6>
-                                    <p class="text-caramelo fw-bold mb-1">$3.50</p>                                    
-                                    <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                        <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Café Bombón', 3.50)">Agregar</button>
-                                        <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#modalDetalles" 
-                                            onclick="mostrarDetalles('Café Bombón', 'img/bombon.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
-                                            Ver detalles
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col-6 col-md-4">
-                            <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                <img src="img/expresso.png" class="card-img-top rounded-4 mb-2" alt="Espresso">
-                                <div class="card-body p-1 text-center">
-                                    <h6 class="fw-bold mb-1">Espresso</h6>
-                                    <p class="text-caramelo fw-bold mb-1">$2.50</p>
-                                    <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                        <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Espresso', 2.50)">Agregar</button>
-                                        <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#modalDetalles" 
-                                            onclick="mostrarDetalles('Espresso', 'img/expresso.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
-                                            Ver detalles
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-4 d-none d-sm-block">
-                            <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                <img src="img/americano.png" class="card-img-top rounded-4 mb-2" alt="Americano">
-                                <div class="card-body p-1 text-center">
-                                    <h6 class="fw-bold mb-1">Americano</h6>
-                                    <p class="text-caramelo fw-bold mb-1">$2.75</p>
-                                    <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                        <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Americano', 2.75)">Agregar</button>
-                                        <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                            data-bs-toggle="modal" 
-                                            data-bs-target="#modalDetalles" 
-                                            onclick="mostrarDetalles('Americano', 'img/americano.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.75')">
-                                            Ver detalles
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div id="slider-cafes" class="product-slider">              
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/capuccino.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Cappuccino</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.50</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Cappuccino', 3.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Cappuccino', 'img/capuccino.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum', '$3.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/kitkat.png" class="card-img-top rounded-4 mb-2" alt="KitKat">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">KitKat Latte</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.75</p>
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('KitKat Latte', 3.75)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('KitKat Latte', 'img/kitkat.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum', '$3.75')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/mocha-blanco.png" class="card-img-top rounded-4 mb-2" alt="Mocha">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Mocha Blanco</h6>
+                    <p class="text-caramelo fw-bold mb-3">$4.00</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Mocha Blanco', 4.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Mocha Blanco', 'img/mocha-blanco.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum', '$4.00')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/bombon.png" class="card-img-top rounded-4 mb-2" alt="Espresso">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Café Bombón</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.50</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Café Bombón', 3.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Café Bombón', 'img/bombon.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/expresso.png" class="card-img-top rounded-4 mb-2" alt="Espresso">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Espresso</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.50</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Espresso', 2.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Espresso', 'img/expresso.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$2.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/americano.png" class="card-img-top rounded-4 mb-2" alt="Espresso">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Americano</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.75</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Americano', 2.75)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Americano', 'img/americano.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.75')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+            <button class="btn-slider btn-next" onclick="moverScroll('slider-cafes', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+    </div>
+    </section>  
+
+        <!-- SECCION CAFÉ FRÍO -->
+        <section id="cafes-frios" class="mb-5 pt-4">
+        <div class="container">
+            <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-snowflake me-2"></i>Café Frío</h4>
+        </div>
+        
+        <div class="container-fluid slider-wrapper">
+            <button class="btn-slider btn-prev"     onclick="moverScroll('slider-cafesfrios', -350)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div id="slider-cafesfrios" class="product-slider">              
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/affogato.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Affogato</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.50</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Affogato', 3.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Affogato', 'img/affogato.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/capuccinohelado.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Capuccino Helado</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.75</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Capuccino Helado', 3.75)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Cappuccino Helado', 'img/capuccinohelado.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/cafehielo.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Café con Hielo</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.75</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Café con Hielo', 3.75)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Café con Hielo', 'img/cafehielo.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
+                            Ver detalles
+                        </button>
                     </div>
                 </div>
             </div>
             
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCafes" data-bs-slide="prev">
-                <i class="fas fa-chevron-left text-dark fs-3"></i>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCafes" data-bs-slide="next">
-                <i class="fas fa-chevron-right text-dark fs-3"></i>
-            </button>
-            </div>
-        </section>
-
-        <!-- SECCION CAFÉ FRÍO -->
-        <section id="cafes-frios" class="mb-5 pt-4">
-            <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-snowflake me-2"></i>Café Frío</h4>
-            <div id="carouselFrio" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/affogato.png" class="card-img-top rounded-4 mb-2" alt="Affogato">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Affogato</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Affogato', 3.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Affogato', 'img/affogato.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/capuccinohelado.png" class="card-img-top rounded-4 mb-2" alt="Capuccino Helado">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Capuccino Helado</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.75</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Capuccino Helado', 3.75)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Cappuccino Helado', 'img/capuccinohelado.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 d-none d-md-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/cafehielo.png" class="card-img-top rounded-4 mb-2" alt="Café cpn Hielo">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Café con Hielo</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.75</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Café con Hielo', 3.75)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Café con Hielo', 'img/cafehielo.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/dalgona.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Café Dalgona</h6>
+                    <p class="text-caramelo fw-bold mb-3">$4.00</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Café Dalgona', 4.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Café Dalgona', 'img/dalgona.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
+                            Ver detalles
+                        </button>
                     </div>
-
-                    <div class="carousel-item">
-                        <div class="row g-3 justify-content-center">
-                            <div class=" col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/dalgona.png" class="card-img-top rounded-4 mb-2" alt="Café Dalgona">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Café Dalgona</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Café Dalgona', 4.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Café Dalgona', 'img/dalgona.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/coldbrew.png" class="card-img-top rounded-4 mb-2" alt="Cold Brew">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Cold Brew</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.25</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Cold Brew', 4.25)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Cold Brew', 'img/coldbrew.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.25')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>                                
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4 d-none d-md-block" style="visibility: hidden;">
-                                <div class="card h-100 border-0 p-2"></div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselFrio" data-bs-slide="prev">
-                    <i class="fas fa-chevron-left text-dark fs-3"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselFrio" data-bs-slide="next">
-                    <i class="fas fa-chevron-right text-dark fs-3"></i>
-                </button>
             </div>
-        </section>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/coldbrew.png" class="card-img-top rounded-4 mb-2" alt="Cappuccino">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Cold Brew</h6>
+                    <p class="text-caramelo fw-bold mb-3">$4.25</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Cold Brew', 4.250)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Cold Brew', 'img/coldbrew.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.25')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <button class="btn-slider btn-next" onclick="moverScroll('slider-cafesfrios', 350)">
+            <i class="fas fa-chevron-right"></i>
+            </button>
+        </div> 
+            
+        
+    </section>
+
 
         <!-- SECCION DE CHOCOLATE -->
-        <section id="chocolates" class="mb-5 pt-4">
-            <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-snowflake me-2"></i>Bebidas de Chocolate</h4>
-            <div class="row g-4">
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/chocolateclasico.png" class="card-img-top rounded-4 mb-2" alt="Chocolate Caliente">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Chocolate Caliente Clásico</h6>
-                            <p class="text-caramelo fw-bold mb-1">$3.50</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Chocolate Caliente', 3.50)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
+    <section id="chocolates" class="mb-5 pt-4">
+        <div class="container">
+         <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-snowflake me-2"></i>Bebidas de Chocolate</h4>   
+        </div>  
+        
+    <div class="container-fluid px-4 px-lg-5">    
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/chocolateclasico.png" class="card-img-top rounded-4 mb-2" alt="Chocolate Caliente">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Chocolate Clásico</h6>
+                        <p class="text-caramelo fw-bold mb-3">$3.50</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Chocolate Caliente', 3.50)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
                                     data-bs-toggle="modal" 
                                     data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Chocolate Caliente', 'img/chocolateclasico.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/chocolatemalva.png" class="card-img-top rounded-4 mb-2" alt="Chocolate con Malvaviscos">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Chocolate con Malvaviscos</h6>
-                            <p class="text-caramelo fw-bold mb-1">$3.75</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Chocolate con Malvaviscos', 3.75)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Chocolate con Malvaviscos', 'img/chocolatemalva.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.75')">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/chocolateblanco.png" class="card-img-top rounded-4 mb-2" alt="Chocolate Blanco">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Chocolate Blanco Caliente</h6>
-                            <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Chocolate Blanco Caliente', 4.00)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Chocolate Blanco Caliente', 'img/chocolateblanco.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                    Ver detalles
-                                </button>
-                            </div>
+                                    onclick="mostrarDetalles('Chocolate Caliente', 'img/chocolateclasico.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$3.50')">
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/chocolatemalva.png" class="card-img-top rounded-4 mb-2" alt="Chocolate Malvaviscos">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Con Malvaviscos</h6>
+                        <p class="text-caramelo fw-bold mb-3">$3.75</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Chocolate con Malvaviscos', 3.75)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalDetalles" 
+                                    onclick="mostrarDetalles('Chocolate con Malvaviscos', 'img/chocolatemalva.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$3.75')">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/chocolateblanco.png" class="card-img-top rounded-4 mb-2" alt="Chocolate Blanco">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Chocolate Blanco</h6>
+                        <p class="text-caramelo fw-bold mb-3">$4.00</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Chocolate Blanco Caliente', 4.00)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalDetalles" 
+                                    onclick="mostrarDetalles('Chocolate Blanco Caliente', 'img/chocolateblanco.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$4.00')">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+    </div> 
+    </section>
 
         <!-- SECCION DE TÉ -->
-        <section id="tes" class="mb-5 pt-4">
-            <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-leaf me-2"></i>Tés e Infusiones</h4>
-            <div id="carouselTes" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/tenegro.png" class="card-img-top rounded-4 mb-2" alt="Té Negro">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Té Negro</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$2.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Té Negro', 2.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Té Negro', 'img/tenegro.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/teverde.png" class="card-img-top rounded-4 mb-2" alt="Té Verde">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Té Verde</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$2.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Té Verde', 2.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Té Verde', 'img/teverde.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 d-none d-md-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/temanzanilla.png" class="card-img-top rounded-4 mb-2" alt="Manzanilla">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Té de Manzanilla</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$2.25</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Té de Manzanilla', 2.25)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Té de Manzanilla', 'img/temanzanilla.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.25')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section id="tes" class="mb-5 pt-4">
+    <div class="container"> 
+        <h4 class="text-caramelo mb-4 fw-bold">
+            <i class="fas fa-leaf me-2"></i>Tés e Infusiones
+        </h4>
+    </div>
+    
+    <div class="container-fluid slider-wrapper">
+        <button class="btn-slider btn-prev" onclick="moverScroll('slider-tes', -350)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
 
-                    <div class="carousel-item">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/tefrutosrojos.png" class="card-img-top rounded-4 mb-2" alt="Frutos Rojos">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Té de Frutos Rojos</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$2.75</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Té de Frutos Rojos', 2.75)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Té de Frutos Rojos', 'img/tefrutosrojos.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.75')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/tementa.png" class="card-img-top rounded-4 mb-2" alt="Menta">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Té de Menta</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$2.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Té de Menta', 2.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Té de Menta', 'img/tementa.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 d-none d-md-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/chailatte.png" class="card-img-top rounded-4 mb-2" alt="Chai Latte">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Chai Latte</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.95</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Chai Latte', 3.95)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Chai Latte', 'img/chailatte.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.95')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div id="slider-tes" class="product-slider">              
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/tenegro.png" class="card-img-top rounded-4 mb-2" alt="Té Negro">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Té Negro</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.50</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Té Negro', 2.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Té Negro', 'img/tenegro.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
+                            Ver detalles
+                        </button>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTes" data-bs-slide="prev">
-                    <i class="fas fa-chevron-left text-dark fs-3"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselTes" data-bs-slide="next">
-                    <i class="fas fa-chevron-right text-dark fs-3"></i>
-                </button>
             </div>
-        </section>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/teverde.png" class="card-img-top rounded-4 mb-2" alt="Té Verde">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Té Verde</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.50</p>
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Té Verde', 2.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Té Verde', 'img/teverde.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/temanzanilla.png" class="card-img-top rounded-4 mb-2" alt="Manzanilla">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Té de Manzanilla</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.25</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Té de Manzanilla', 2.25)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Té de Manzanilla', 'img/temanzanilla.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.25')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/tefrutosrojos.png" class="card-img-top rounded-4 mb-2" alt="Frutos Rojos">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Té de Frutos Rojos</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.75</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Té de Frutos Rojos', 2.75)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Té de Frutos Rojos', 'img/tefrutosrojos.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.75')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/tementa.png" class="card-img-top rounded-4 mb-2" alt="Menta">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Té de Menta</h6>
+                    <p class="text-caramelo fw-bold mb-3">$2.50</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Té de Menta', 2.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Té de Menta', 'img/tementa.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/chailatte.png" class="card-img-top rounded-4 mb-2" alt="Chai Latte">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Chai Latte</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.95</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Chai Latte', 3.95)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Chai Latte', 'img/chailatte.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.95')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+            <button class="btn-slider btn-next" onclick="moverScroll('slider-tes', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+    </div>
+    </section>    
 
         <!-- SECCION BEBIDAS SIN CAFÉ -->
-        <section id="refrescantes" class="mb-5 pt-4">
-            <h4 class="text-caramelo mb-4 fw-bold"><i class="fas fa-glass-whiskey me-2"></i>Bebidas refrescantes (Sin café)</h4>
-            <div class="row g-4">
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/limonada.png" class="card-img-top rounded-4 mb-2" alt="Limonada Natural">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Limonada Natural</h6>
-                            <p class="text-caramelo fw-bold mb-1">$2.50</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Limonada Natural', 2.50)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Limonada Natural', 'img/limonada.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.50')">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="refrescantes" class="mb-5 pt-4">
+    
+    <div class="container">
+        <h4 class="text-caramelo mb-4 fw-bold">
+            <i class="fas fa-glass-whiskey me-2"></i>Bebidas refrescantes (Sin café)
+        </h4>
+    </div>
 
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/piñacolada.png" class="card-img-top rounded-4 mb-2" alt="Piña Colada">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Piña Colada</h6>
-                            <p class="text-caramelo fw-bold mb-1">$2.75</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Piña Colada', 2.75)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
+    <div class="container-fluid px-3 px-lg-5">
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/limonada.png" class="card-img-top rounded-4 mb-2" alt="Limonada Natural">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Limonada Natural</h6>
+                        <p class="text-caramelo fw-bold mb-3">$2.50</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Limonada Natural', 2.50)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
                                     data-bs-toggle="modal" 
                                     data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Piña Colada', 'img/piñacolada.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.75')">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/aguasandia.png" class="card-img-top rounded-4 mb-2" alt="Sandia">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Agua de Sandia</h6>
-                            <p class="text-caramelo fw-bold mb-1">$2.25</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Agua de Sandia', 2.25)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Agua de Sandia', 'img/aguasandia.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.25')">
-                                    Ver detalles
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                        <img src="img/smoothie.png" class="card-img-top rounded-4 mb-2" alt="Smoothie de Mango">
-                        <div class="card-body p-1 text-center">
-                            <h6 class="fw-bold mb-1">Smoothie de Mango</h6>
-                            <p class="text-caramelo fw-bold mb-1">$2.25</p>
-                            <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Smoothie de Mango', 2.25)">Agregar</button>
-                                <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                    data-bs-toggle="modal" 
-                                    data-bs-target="#modalDetalles" 
-                                    onclick="mostrarDetalles('Smoothie de Mango', 'img/smoothie.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 2.25')">
-                                    Ver detalles
-                                </button>
-                            </div>
+                                    onclick="mostrarDetalles('Limonada Natural', 'img/limonada.png', 'Refrescante limonada hecha al momento.', '$2.50')">
+                                Ver detalles
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/piñacolada.png" class="card-img-top rounded-4 mb-2" alt="Piña Colada">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Piña Colada</h6>
+                        <p class="text-caramelo fw-bold mb-3">$2.75</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Piña Colada', 2.75)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalDetalles" 
+                                    onclick="mostrarDetalles('Piña Colada', 'img/piñacolada.png', 'Mezcla tropical de piña y coco.', '$2.75')">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/aguasandia.png" class="card-img-top rounded-4 mb-2" alt="Sandia">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Agua de Sandía</h6>
+                        <p class="text-caramelo fw-bold mb-3">$2.25</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Agua de Sandia', 2.25)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalDetalles" 
+                                    onclick="mostrarDetalles('Agua de Sandia', 'img/aguasandia.png', 'Dulce y refrescante agua de sandía.', '$2.25')">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-3">
+                    <img src="img/smoothie.png" class="card-img-top rounded-4 mb-2" alt="Smoothie de Mango">
+                    <div class="card-body p-0 text-center">
+                        <h6 class="fw-bold mb-1 fs-5">Smoothie Mango</h6>
+                        <p class="text-caramelo fw-bold mb-3">$2.25</p>
+                        
+                        <div class="d-flex flex-column flex-xl-row gap-2">
+                            <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Smoothie de Mango', 2.25)">
+                                AGREGAR
+                            </button>
+                            <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#modalDetalles" 
+                                    onclick="mostrarDetalles('Smoothie de Mango', 'img/smoothie.png', 'Cremoso batido de mango.', '$2.25')">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- SECCION PASTELES -->
-        <section id="pasteles" class="mb-5 pt-4">
-            <h2 class="text-center serif-font display-5 mb-4 border-bottom pb-2">PASTELES</h2>
+    <section id="pasteles" class="mb-5 pt-4">
+    <div class="container"> 
+        <h2 class="text-center serif-font display-5 mb-3 border-bottom pb-3">PASTELES</h2>  
+    </div>
     
-            <div id="carouselPasteles" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">           
-                    <div class="carousel-item active">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/pastelchocolate.png" class="card-img-top rounded-4 mb-2" alt="Pastel Chocolate">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Pastel de Chocolate</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$6.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Pastel de Chocolate', 6.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Pastel de Chocolate', 'img/pastelchocolate.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 6.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/pastelvainilla.png" class="card-img-top rounded-4 mb-2" alt="Pastel Vainilla">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Pastel de Vainilla</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Pastel de Vainilla', 4.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Pastel de Vainilla', 'img/pastelvainilla.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 d-none d-md-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/chessecake.png" class="card-img-top rounded-4 mb-2" alt="Cheesecake">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Cheesecake</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$5.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Cheesecake', 5.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Cheesecake', 'img/chessecake.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 5.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container-fluid slider-wrapper">
+        <button class="btn-slider btn-prev" onclick="moverScroll('slider-pasteles', -350)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
 
-                    <div class="carousel-item">
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/tarta.png" class="card-img-top rounded-4 mb-2" alt="Tarta Frutas">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Tarta de Frutas</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Tarta de Frutas', 4.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Tarta de Frutas', 'img/tarta.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/brownie.png" class="card-img-top rounded-4 mb-2" alt="Brownie">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Brownie con Nueces</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$3.50</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Brownie con Nueces', 3.50)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Brownie con Nueces', 'img/brownie.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-md-4 d-none d-md-block">
-                                <div class="card h-100 border-0 shadow-sm item-menu rounded-4 p-2">
-                                    <img src="img/redvelvet.png" class="card-img-top rounded-4 mb-2" alt="Red Velvet">
-                                    <div class="card-body p-1 text-center">
-                                        <h6 class="fw-bold mb-1">Pastel Red Velvet</h6>
-                                        <p class="text-caramelo fw-bold mb-1">$4.00</p>
-                                        <div class="d-grid d-sm-flex justify-content-sm-center gap-2 mt-3 col-10 mx-auto col-sm-12">
-                                            <button class="btn btn-sm btn-caramelo px-2 px-sm-4 rounded-pill" onclick="agregarAlCarrito('Pastel Red Velvet', 4.00)">Agregar</button>
-                                            <button class="btn btn-sm btn-outline-secondary px-2 px-sm-4 rounded-pill" 
-                                                data-bs-toggle="modal" 
-                                                data-bs-target="#modalDetalles" 
-                                                onclick="mostrarDetalles('Pastel Red Velvet', 'img/redvelvet.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
-                                                Ver detalles
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div id="slider-pasteles" class="product-slider">              
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/pastelchocolate.png" class="card-img-top rounded-4 mb-2" alt="Pastel de Chocolate">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Pastel de Chocolate</h6>
+                    <p class="text-caramelo fw-bold mb-3">$6.50</p>
+                    
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Pastel de Chocolate', 6.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Pastel de Chocolate', 'img/pastelchocolate.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 6.50')">
+                            Ver detalles
+                        </button>
                     </div>
-
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPasteles" data-bs-slide="prev">
-                    <i class="fas fa-chevron-left text-dark fs-3"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselPasteles" data-bs-slide="next">
-                    <i class="fas fa-chevron-right text-dark fs-3"></i>
-                </button>
             </div>
-        </section>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/pastelvainilla.png" class="card-img-top rounded-4 mb-2" alt="Pastel de Vainilla">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Pastel de Vainilla</h6>
+                    <p class="text-caramelo fw-bold mb-3">$4.00</p>
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Pastel de Vainilla', 4.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Pastel de Vainilla', 'img/pastelvainilla.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/chessecake.png" class="card-img-top rounded-4 mb-2" alt="Cheesecake">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Cheesecake</h6>
+                    <p class="text-caramelo fw-bold mb-3">$5.00</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Cheesecake', 5.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Cheesecake', 'img/chessecake.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 5.00')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/tarta.png" class="card-img-top rounded-4 mb-2" alt="Tarta de Frutas">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Tarta de Frutas</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.50</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Tarta de Frutas', 4.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Tarta de Frutas', 'img/tarta.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/brownie.png" class="card-img-top rounded-4 mb-2" alt="Brownie con Nueces">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Brownie con Nueces</h6>
+                    <p class="text-caramelo fw-bold mb-3">$3.50</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Brownie con Nueces', 3.50)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Brownie con Nueces', 'img/brownie.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 3.50')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm item-menu rounded-4 p-3">
+                <img src="img/redvelvet.png" class="card-img-top rounded-4 mb-2" alt="Pastel Red Velvet">
+                <div class="card-body p-0 text-center">
+                    <h6 class="fw-bold mb-1 fs-5">Pastel Red Velvet</h6>
+                    <p class="text-caramelo fw-bold mb-3">$4.00</p>                   
+                    <div class="d-flex flex-column flex-md-row gap-2">
+                        <button class="btn btn-caramelo rounded-pill w-100 btn-sm" onclick="agregarAlCarrito('Pastel Red Velvet', 4.00)">
+                            AGREGAR
+                        </button>
+                        <button class="btn btn-outline-secondary rounded-pill w-100 btn-sm" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#modalDetalles" 
+                                onclick="mostrarDetalles('Pastel Red Velvet', 'img/redvelvet.png', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nesciunt laborum omnis sit esse eum!', '$ 4.00')">
+                            Ver detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+            <button class="btn-slider btn-next" onclick="moverScroll('slider-pasteles', 350)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+    </div>
+    </section>
 
         <!-- SECCION PANADERÍA -->
         <section id="panaderia" class="mb-5 pt-4">
@@ -871,62 +909,69 @@
         </section>
 
         <!-- SECCION COMBOS -->
-        <section id="combos" class="mb-5 pt-4">
-            <div class="text-center mb-5">
-                <h2 class="serif-font display-4 mb-2">PROMOCIONES ESPECIALES</h2>
-                <div class="border-bottom w-25 mx-auto pb-2"></div>
-            </div>
+<section id="combos" class="mb-5 pt-4">
+    
+    <div class="container text-center mb-5">
+        <h2 class="serif-font display-4 mb-2">PROMOCIONES ESPECIALES</h2>
+        <div class="border-bottom mx-auto pb-2"></div>
+    </div>
 
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-md-4">
-                    <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
-                        <img src="img/combocafe.png" class="card-img-top rounded-4 mb-3" alt="Combo Café y Pastel">
-                        <div class="card-body p-2 text-center">
-                            <h5 class="fw-bold mb-2">Café + Pastel del Día</h5>
-                            <p class="text-muted small mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor molestiae blanditiis, natus perferendis atque nihil nam non facere eveniet praesentium?.</p>
-                            <div class="d-flex justify-content-between align-items-center bg-light rounded-pill p-2 px-3 mt-auto">
-                                <span class="text-caramelo fw-bold fs-5">$6.50</span>
-                                <button class="btn btn-caramelo rounded-pill px-4 shadow-sm" onclick="agregarAlCarrito('Combo Café + Pastel', 6.50)">
-                                    Agregar combo
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
-                        <img src="img/combocapuccino.png" class="card-img-top rounded-4 mb-3" alt="Combo Cappuccino y Croissant">
-                        <div class="card-body p-2 text-center">
-                            <h5 class="fw-bold mb-2">Cappuccino + Croissant</h5>
-                            <p class="text-muted small mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam impedit iste quo! Repudiandae optio, fugiat harum placeat cupiditate saepe repellendus.</p>
-                            <div class="d-flex justify-content-between align-items-center bg-light rounded-pill p-2 px-3 mt-auto">
-                                <span class="text-caramelo fw-bold fs-5">$5.25</span>
-                                <button class="btn btn-caramelo rounded-pill px-4 shadow-sm" onclick="agregarAlCarrito('Combo Cappuccino + Croissant', 5.25)">
-                                    Agregar combo
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
-                        <img src="img/combolatte.png" class="card-img-top rounded-4 mb-3" alt="Combo Latte y Brownie">
-                        <div class="card-body p-2 text-center">
-                            <h5 class="fw-bold mb-2">Latte + Brownie</h5>
-                            <p class="text-muted small mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel blanditiis maiores dolor cupiditate consequuntur minima nemo repudiandae asperiores in?.</p>
-                            <div class="d-flex justify-content-between align-items-center bg-light rounded-pill p-2 px-3 mt-auto">
-                                <span class="text-caramelo fw-bold fs-5">$5.75</span>
-                                <button class="btn btn-caramelo rounded-pill px-4 shadow-sm" onclick="agregarAlCarrito('Combo Latte + Brownie', 5.75)">
-                                    Agregar combo
-                                </button>
-                            </div>
+    <div class="container-fluid px-3 px-lg-5">
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-12 col-md-6 col-xl-4"> <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
+                    <img src="img/combocafe.png" class="card-img-top rounded-4 mb-3" alt="Combo Café y Pastel">
+                    <div class="card-body p-2 text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2">Café + Pastel del Día</h5>
+                        <p class="text-muted small mb-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor molestiae blanditiis.</p>
+                        
+                        <div class="mt-auto d-flex flex-column flex-xl-row align-items-center justify-content-between bg-light rounded-pill p-2 px-3 gap-2">
+                            <span class="text-caramelo fw-bold fs-5">$6.50</span>
+                            <button class="btn btn-caramelo rounded-pill px-4 shadow-sm w-sm-100 btn-sm" onclick="agregarAlCarrito('Combo Café + Pastel', 6.50)">
+                                Agregar combo
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
+                    <img src="img/combocapuccino.png" class="card-img-top rounded-4 mb-3" alt="Combo Cappuccino y Croissant">
+                    <div class="card-body p-2 text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2">Cappuccino + Croissant</h5>
+                        <p class="text-muted small mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam impedit iste quo!</p>
+                        
+                        <div class="mt-auto d-flex flex-column flex-xl-row align-items-center justify-content-between bg-light rounded-pill p-2 px-3 gap-2">
+                            <span class="text-caramelo fw-bold fs-5">$5.25</span>
+                            <button class="btn btn-caramelo rounded-pill px-4 shadow-sm w-sm-100 btn-sm" onclick="agregarAlCarrito('Combo Cappuccino + Croissant', 5.25)">
+                                Agregar combo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+                <div class="card h-100 border-0 shadow-lg item-menu rounded-4 p-3 border-top border-caramelo border-4">
+                    <img src="img/combolatte.png" class="card-img-top rounded-4 mb-3" alt="Combo Latte y Brownie">
+                    <div class="card-body p-2 text-center d-flex flex-column">
+                        <h5 class="fw-bold mb-2">Latte + Brownie</h5>
+                        <p class="text-muted small mb-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum vel blanditiis maiores.</p>
+                        
+                        <div class="mt-auto d-flex flex-column flex-xl-row align-items-center justify-content-between bg-light rounded-pill p-2 px-3 gap-2">
+                            <span class="text-caramelo fw-bold fs-5">$5.75</span>
+                            <button class="btn btn-caramelo rounded-pill px-4 shadow-sm w-sm-100 btn-sm" onclick="agregarAlCarrito('Combo Latte + Brownie', 5.75)">
+                                Agregar combo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
     </main>
 
     <!-- SECCION OFFCANVAS CARRITO -->

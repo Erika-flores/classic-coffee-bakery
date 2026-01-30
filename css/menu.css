@@ -10,31 +10,6 @@
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-
-/* Estilo de los controles del carrusel */
-.carousel-control-prev, .carousel-control-next {
-    width: 5%;
-    background: none;
-    border: none;
-    opacity: 1;
-}
-
-/* Asegurar que las tarjetas tengan un padding para el efecto de movimiento */
-.carousel-inner {
-    padding: 15px 0;
-}
-
-/* Flechas fuera del área de las tarjetas para no tapar contenido */
-.carousel-control-prev { left: -50px; }
-.carousel-control-next { right: -50px; }
-
-/* Si el contenedor corta las flechas en móvil, se ocultan*/
-@media (max-width: 1200px) {
-    .carousel-control-prev, .carousel-control-next {
-        display: none; 
-    }
-}
-
 /* --- ESTILO DE TARJETAS Y ANIMACIÓN --- */
 .item-menu {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -54,4 +29,94 @@
     #modalDetalles .modal-dialog {
         max-width: 95vw; /* En móviles es mejor que ocupe casi todo el ancho */
     }
+}
+
+/* --- SLIDER DE PRODUCTOS (Reemplazo del Carrusel) --- */
+/* --- CONTENEDOR PRINCIPAL --- */
+.slider-wrapper {
+    position: relative;
+    /* Aumentamos el padding lateral para dejar espacio a las flechas FUERA de las cards */
+    padding: 0 80px; 
+    margin: 0 auto;
+    overflow: visible; /* Importante para que se vean las sombras */
+    /* max-width: 1600px; */
+}
+
+/* --- SLIDER FLEXIBLE --- */
+.product-slider {
+    display: flex;
+    gap: 20px; /* Espacio entre tarjetas */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px; 
+    
+    /* Ocultar scrollbar */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.product-slider::-webkit-scrollbar { display: none; }
+
+/* --- LÓGICA DE TAMAÑOS RESPONSIVOS (Cards) --- */
+.product-slider .card {
+    scroll-snap-align: center; /* En móvil centramos */
+    flex: 0 0 auto; /* Evita que se deformen */
+    transition: transform 0.3s ease;
+    
+    /* PANTALLA PEQUEÑA (Móvil): 1 Card (100% del ancho) */
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/* PANTALLA MEDIANA (Tablets >= 768px): 2 Cards */
+/* Fórmula: (100% del espacio - 1 hueco de 20px) / 2 */
+@media (min-width: 768px) {
+    .product-slider .card {
+        min-width: calc((100% - 20px) / 2);
+        max-width: calc((100% - 20px) / 2);
+        scroll-snap-align: start; /* Alineamos a la izquierda */
+    }
+}
+
+/* PANTALLA GRANDE (PC >= 992px): 3 Cards */
+/* Fórmula: (100% del espacio - 2 huecos de 20px) / 3 */
+@media (min-width: 992px) {
+    .product-slider .card {
+        min-width: calc((100% - 40px) / 3);
+        max-width: calc((100% - 40px) / 3);
+    }
+}
+
+/* --- BOTONES DE NAVEGACIÓN (< >) --- */
+.btn-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Centrado vertical exacto */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--caramelo);
+    color: white;
+    border: none;
+    z-index: 20;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-slider:hover {
+    background-color: var(--cafe-oscuro);
+}
+
+/* Posición absoluta: izquierda 0 y derecha 0 (dentro del padding del wrapper) */
+.btn-prev { left: 38px; }
+.btn-next { right: 38px; }
+
+/* --- OCULTAR FLECHAS EN MÓVIL --- */
+@media (max-width: 768px) {
+    .btn-slider { display: none; }
+    .slider-wrapper { padding: 0; } /* Quitamos el padding extra en móvil */
 }
